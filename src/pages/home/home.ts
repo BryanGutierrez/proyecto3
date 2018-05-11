@@ -37,10 +37,10 @@ export class HomePage {
     },
     {
       position:{
-        latitude: 21.487730,
-        longitude: -104.831068,
+        latitude: 21.485800, 
+        longitude: -104.818215,
       },
-      title:'Casa de Bryan'
+      title:'Casa de Betsy'
     }
   ];
   ionViewDidLoad(){
@@ -107,7 +107,8 @@ export class HomePage {
       let marker = new google.maps.Marker({
         position: latLng,
         map: this.map,
-        title: title
+        title: title,
+        icon: '../assets/imgs/casita.png'
       });
       mapEle.classList.add('show-map');
     });
@@ -132,7 +133,8 @@ export class HomePage {
     let marker = new google.maps.Marker({
       position: latLng,
       map: this.map,
-      title: title
+      title: title,
+     icon: '../assets/imgs/escudo_itt.png'
     });
     mapEle.classList.add('show-map');
   });
